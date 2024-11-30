@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactuar con Smart Contract</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1></h1>
+      <p>Establezca y obtenga el mensaje almacenado en la blockchain</p>
+    </header>
+
+    <div class="message-box">
+      <div class="input-group">
+        <label for="message">Nuevo mensaje</label>
+        <input type="text" id="message" placeholder="Escribe tu mensaje aquí..." />
+      </div>
+      <button id="setMessageBtn" class="button">Establecer Mensaje</button>
+    </div>
+
+    <div class="message-box">
+      <button id="getMessageBtn" class="button">Obtener Mensaje</button>
+      <p id="storedMessage">Mensaje almacenado: </p>
+    </div>
+
+    <footer>
+      <p>Desarrollado con ❤️ usando Web3.js</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
